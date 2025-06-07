@@ -1,0 +1,187 @@
+%----------------------------------------------------------------------------------------
+%	ACADEMIC COVER LETTER TEMPLATE
+%----------------------------------------------------------------------------------------
+%
+% This template provides a professional format for academic journal submission cover letters.
+%
+% INSTRUCTIONS FOR USE:
+% 1. Replace all text enclosed in [SQUARE BRACKETS] with your specific information
+% 2. Update the logo.jpg file with your institution's logo
+% 3. Modify the contact information section with your details
+% 4. Fill in the manuscript title, journal name, and research content
+% 5. Customize the contributions list based on your research
+% 6. Adapt the methodology and significance paragraphs to your work
+%
+% REQUIRED CUSTOMIZATIONS:
+% - [YOUR NAME]: Your full name
+% - [YOUR EMAIL]: Your email address  
+% - [YOUR ADDRESS LINE 1/2]: Your institutional address
+% - [YOUR MANUSCRIPT TITLE]: Title of your submitted manuscript
+% - [JOURNAL NAME]: Name of the target journal
+% - [CONTRIBUTION X TITLE]: Titles for your main contributions
+% - Research content paragraphs: Background, approach, methodology, significance
+%
+% OPTIONAL CUSTOMIZATIONS:
+% - Editor addressing section (currently commented out)
+% - Preprint information section (currently commented out)
+% - Logo file (logo.jpg) - replace with your institution's logo
+%
+% COMPILATION: 
+% pdflatex cover-letter.tex
+%
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+ 
+\usepackage{charter} % Use the Charter font
+\usepackage{hyperref}
+
+\usepackage[
+	a4paper, % Paper size
+	top=1in, % Top margin
+	bottom=1in, % Bottom margin
+	left=1in, % Left margin
+	right=1in, % Right margin
+	%showframe % Uncomment to show frames around the margins for debugging purposes
+]{geometry}
+
+\setlength{\parindent}{0pt} % Paragraph indentation
+\setlength{\parskip}{1em} % Vertical space between paragraphs
+
+\usepackage{graphicx} % Required for including images
+
+\usepackage{fancyhdr} % Required for customizing headers and footers
+
+\fancypagestyle{firstpage}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{0pt} % No header rule
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\fancypagestyle{subsequentpages}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{1pt} % Header rule thickness
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\AtBeginDocument{\thispagestyle{firstpage}} % Use the first page headers/footers style on the first page
+\pagestyle{subsequentpages} % Use the subsequent pages headers/footers style on subsequent pages
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	FIRST PAGE HEADER
+%----------------------------------------------------------------------------------------
+
+\includegraphics[width=0.35\textwidth]{logo.jpg} % Logo
+
+\vspace{-1em} % Pull the rule closer to the logo
+
+\rule{\linewidth}{1pt} % Horizontal rule
+
+\bigskip\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\hfill
+\begin{tabular}{l @{}}
+	\hfill \today \bigskip                          \\ % Date - automatically uses current date
+	\hfill [YOUR NAME]                              \\ % Replace with your full name
+	\hfill Email: [YOUR EMAIL]                      \\ % Replace with your email address
+	\hfill [YOUR ADDRESS LINE 1]                    \\ % Replace with your address
+	\hfill [YOUR ADDRESS LINE 2]                    \\ % Replace with your city, state, postal code, country
+\end{tabular}
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING
+%----------------------------------------------------------------------------------------
+
+% Uncomment and fill in if you want to address a specific editor
+% \begin{tabular}{@{} l}
+% 	[EDITOR TITLE] [EDITOR NAME] \\
+% 	[EDITOR POSITION] \\
+% 	\textit{[JOURNAL NAME]}
+% \end{tabular}
+
+% \bigskip % Vertical whitespace
+
+Dear Editor,
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+% INTRODUCTION PARAGRAPH
+% Replace the text below with your manuscript submission introduction
+We are pleased to submit our manuscript entitled "[YOUR MANUSCRIPT TITLE]" for consideration for publication in [JOURNAL NAME].
+
+% BACKGROUND AND MOTIVATION PARAGRAPH
+% Describe the research problem and its importance in your field
+[DESCRIBE THE RESEARCH PROBLEM AND ITS IMPORTANCE. For example: Ocean wave height forecasting is critical for maritime safety, offshore operations, and renewable marine energy management. While traditional physics-based numerical models and conventional deep learning approaches have made significant contributions to this field, they often suffer from high computational costs, limited generalization capabilities, and requirements for extensive domain-specific datasets.]
+
+% STUDY APPROACH PARAGRAPH
+% Explain your approach and its novelty
+[DESCRIBE YOUR APPROACH AND ITS NOVELTY. For example: This study addresses these challenges by introducing Chronos, a tokenized large-scale time series foundation model, to significant wave height (SWH) prediction. Our work represents the first comprehensive evaluation of large language model (LLM)-inspired architectures in oceanographic forecasting applications.]
+
+\bigskip
+
+\textbf{The main contributions of our study are as follows:}
+\begin{itemize}
+    % Replace each item below with your specific contributions
+    \item \textbf{[CONTRIBUTION 1 TITLE]} [Describe your first main contribution in detail]
+    
+    \item \textbf{[CONTRIBUTION 2 TITLE]} [Describe your second main contribution in detail]
+    
+    \item \textbf{[CONTRIBUTION 3 TITLE]} [Describe your third main contribution in detail]
+    
+    \item \textbf{[CONTRIBUTION 4 TITLE]} [Describe your fourth main contribution in detail]
+    
+    % Add more items as needed
+    % \item \textbf{[ADDITIONAL CONTRIBUTION]} [Description]
+\end{itemize}
+
+\bigskip
+
+% METHODOLOGY AND RESULTS PARAGRAPH
+% Summarize your methodology and key findings
+[DESCRIBE YOUR METHODOLOGY AND KEY RESULTS. For example: The methodology employs data from five NOAA buoy stations spanning diverse marine environments (water depths: 16-5023m, record spans: 14-32 years). Our results demonstrate that attention-based tokenization and ordinal output modeling enable robust temporal reasoning, particularly excelling in mid-to-long-term forecasts where traditional approaches typically struggle.]
+
+% SIGNIFICANCE AND IMPACT PARAGRAPH
+% Explain the broader impact and significance of your work
+[EXPLAIN THE BROADER IMPACT OF YOUR WORK. For example: This work opens new avenues for applying foundation models to geophysical forecasting and demonstrates the potential of LLM-inspired architectures in environmental modeling. The findings have immediate practical implications for maritime operations, coastal management, and offshore renewable energy systems.]
+
+% CONTRIBUTION TO FIELD PARAGRAPH
+% Describe how your work contributes to the scientific community
+[DESCRIBE YOUR CONTRIBUTION TO THE SCIENTIFIC COMMUNITY. For example: We believe this research makes a significant contribution to both the oceanographic modeling and machine learning communities, offering both theoretical insights into transformer-based time series modeling and practical solutions for operational wave forecasting systems.]
+
+% OPTIONAL: PREPRINT AND DATA AVAILABILITY
+% Uncomment and modify if applicable
+% A preprint version of this manuscript is available on \href{[PREPRINT_URL]}{[PREPRINT_PLATFORM]}. All data and code will be made publicly available upon publication to ensure reproducibility.
+
+% STANDARD CLOSING STATEMENTS
+All authors have approved the manuscript and confirm that it is not under consideration elsewhere. We sincerely appreciate your time and consideration, and we look forward to your response.
+
+We look forward to your favorable consideration of our manuscript.
+
+
+\bigskip % Vertical whitespace
+
+Sincerely yours,
+
+\vspace{20pt} % Vertical whitespace
+
+[YOUR NAME]
+(On behalf of all authors)
+
+\end{document}
+
+% Optional: Add personal notes or reminders here
+% Example: % To PIZZA, a famous cat who inspired this template.
