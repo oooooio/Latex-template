@@ -9,7 +9,7 @@
 % 1. Replace all text enclosed in [SQUARE BRACKETS] with your specific information
 % 2. Fill in manuscript details: reference number, title, journal, authors
 % 3. Copy reviewer comments and provide detailed responses
-% 4. Use red color {\color{red}...} to highlight your changes/additions
+% 4. Use blue color {\color{blue}...} to highlight your changes/additions
 % 5. Add more reviewers/comments as needed using the provided structure
 %
 % REQUIRED CUSTOMIZATIONS:
@@ -32,6 +32,8 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[12pt]{article}
+
+\input{../common-info.tex}
 
 % Required packages
 \usepackage{amsmath,amssymb}
@@ -74,13 +76,13 @@
 %	MANUSCRIPT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\textbf{Reference:} [MANUSCRIPT REFERENCE NUMBER]
+\textbf{Reference:} \manuscriptNumer
 
-\textbf{Title:} [MANUSCRIPT TITLE]
+\textbf{Title:} \myTitle
 
-\textbf{Journal:} [JOURNAL NAME]
+\textbf{Journal:} \journalName
 
-\textbf{Authors:} [AUTHOR NAMES]
+\textbf{Authors:} \allAuthorName
 
 \bigskip
 
@@ -88,11 +90,11 @@
 %	OPENING STATEMENT
 %----------------------------------------------------------------------------------------
 
-\textbf{Dear Editor [EDITOR NAME/TITLE] and Dear Reviewers:}
+\textbf{Dear Editor \editorName and Dear Reviewers:}
 
 Thank you for your valuable comments and suggestions on our manuscript. We sincerely appreciate the time and effort that the editor and anonymous reviewers have dedicated to reviewing our paper carefully. We apologize for any inconveniences caused by errors or unclear presentations in the original submission. 
 
-We have thoroughly addressed all the reviewers' comments and have modified the manuscript accordingly. The specific modifications are listed point by point below, with all changes highlighted in red in the revised manuscript.
+We have thoroughly addressed all the reviewers' comments and have modified the manuscript accordingly. The specific modifications are listed point by point below, with all changes highlighted in blue in the revised manuscript.
 
 %----------------------------------------------------------------------------------------
 %	REVIEWER 1 RESPONSES
@@ -104,15 +106,15 @@ We have thoroughly addressed all the reviewers' comments and have modified the m
 
 \item \textbf{Reviewer Comment:} [COPY THE FIRST REVIEWER'S COMMENT HERE EXACTLY AS WRITTEN]
 
-\textbf{Our Response:} {\color{red}[PROVIDE YOUR DETAILED RESPONSE HERE. Explain what changes you made, where in the manuscript, and why. Be specific about page numbers, section numbers, equations, figures, or tables that were modified.]}
+\textbf{Our Response:} {\color{blue}[PROVIDE YOUR DETAILED RESPONSE HERE. Explain what changes you made, where in the manuscript, and why. Be specific about page numbers, section numbers, equations, figures, or tables that were modified.]}
 
 \item \textbf{Reviewer Comment:} [COPY THE SECOND REVIEWER'S COMMENT HERE]
 
-\textbf{Our Response:} {\color{red}[PROVIDE YOUR DETAILED RESPONSE HERE]}
+\textbf{Our Response:} {\color{blue}[PROVIDE YOUR DETAILED RESPONSE HERE]}
 
 % Add more items as needed for additional comments from Reviewer 1
 % \item \textbf{Reviewer Comment:} [ADDITIONAL COMMENT]
-% \textbf{Our Response:} {\color{red}[YOUR RESPONSE]}
+% \textbf{Our Response:} {\color{blue}[YOUR RESPONSE]}
 
 \end{enumerate}
 
@@ -126,15 +128,15 @@ We have thoroughly addressed all the reviewers' comments and have modified the m
 
 \item \textbf{Reviewer Comment:} [COPY THE FIRST COMMENT FROM REVIEWER 2 HERE]
 
-\textbf{Our Response:} {\color{red}[PROVIDE YOUR DETAILED RESPONSE HERE]}
+\textbf{Our Response:} {\color{blue}[PROVIDE YOUR DETAILED RESPONSE HERE]}
 
 \item \textbf{Reviewer Comment:} [COPY THE SECOND COMMENT FROM REVIEWER 2 HERE]
 
-\textbf{Our Response:} {\color{red}[PROVIDE YOUR DETAILED RESPONSE HERE]}
+\textbf{Our Response:} {\color{blue}[PROVIDE YOUR DETAILED RESPONSE HERE]}
 
 % Add more items as needed
 % \item \textbf{Reviewer Comment:} [ADDITIONAL COMMENT]
-% \textbf{Our Response:} {\color{red}[YOUR RESPONSE]}
+% \textbf{Our Response:} {\color{blue}[YOUR RESPONSE]}
 
 \end{enumerate}
 
@@ -146,7 +148,7 @@ We have thoroughly addressed all the reviewers' comments and have modified the m
 % 
 % \begin{enumerate}
 % \item \textbf{Reviewer Comment:} [REVIEWER 3 COMMENT]
-% \textbf{Our Response:} {\color{red}[YOUR RESPONSE]}
+% \textbf{Our Response:} {\color{blue}[YOUR RESPONSE]}
 % \end{enumerate}
 
 %----------------------------------------------------------------------------------------

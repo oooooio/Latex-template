@@ -1,0 +1,65 @@
+%----------------------------------------------------------------------------------------
+%	COMMON PARAMETERS FILE
+%----------------------------------------------------------------------------------------
+%
+% This file contains common parameters shared across manuscript.tex, cover-letter.tex, and response.tex
+% Include this file in each document using: \input{../common-param.tex}
+%
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	AUTHOR AND INSTITUTION INFORMATION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\journalName}{JOURNAL NAME} % For all three files
+\newcommand{\myTitle}{YOUR TITLE} % For cover-letter.tex and response.tex
+\newcommand{\manuscriptNumer}{MANUSCRIPT REFERENCE NUMBER} % For response.tex
+
+
+% Author Information
+\newcommand{\myName}{YOUR NAME}
+\newcommand{\correspondingAuthorName}{CORRESPONDING AUTHOR NAME}
+\newcommand{\contactEmail}{example@example.com}
+
+\newcommand{\allAuthorName}{\myName, Author 2 Name, \correspondingAuthorName}
+
+% Institution Information
+\newcommand{\institutionOrg}{ORGANIZATION} % For manuscript.tex organization
+\newcommand{\institutionAddress}{ADDRESS} % For manuscript.tex addressline
+\newcommand{\institutionCity}{CITY} % For manuscript.tex city
+\newcommand{\institutionPostcode}{POSTCODE} % For manuscript.tex postcode
+\newcommand{\institutionState}{STATE} % For manuscript.tex state
+\newcommand{\institutionCountry}{COUNTRY} % For manuscript.tex country
+
+\newcommand{\cinstitutionOrg}{ORGANIZATION} % For manuscript.tex organization
+\newcommand{\cinstitutionAddress}{ADDRESS} % For manuscript.tex addressline
+\newcommand{\cinstitutionCity}{CITY} % For manuscript.tex city
+\newcommand{\cinstitutionPostcode}{POSTCODE} % For manuscript.tex postcode
+\newcommand{\cinstitutionState}{STATE} % For manuscript.tex state
+\newcommand{\cinstitutionCountry}{COUNTRY} % For manuscript.tex country
+\newcommand{\addressLine}{YOUR ADDRESS LINE} % For cover-letter.tex
+%----------------------------------------------------------------------------------------
+%	EDITOR INFORMATION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\editorName}{EDITOR NAME} % For cover-letter.tex and response.tex
+
+%----------------------------------------------------------------------------------------
+%	HIGHLIGHTS AND CONTRIBUTIONS
+%----------------------------------------------------------------------------------------
+
+% Research Highlights
+\newcommand{\checkItem}[1]{%
+    \ifstrempty{\trim#1}{%
+        \relax
+    }{%
+        \item #1% 正常内容
+    }%
+}
+\def\highlight{%
+    \begin{highlights}%
+        \item a%
+        \item b%
+        \item c%
+    \end{highlights}%
+}
