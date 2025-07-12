@@ -9,7 +9,7 @@
     "editor.largeFileOptimizations": false,
     "workbench.editor.empty.hint": "hidden",
     "git.enableSmartCommit": true,
-        "latex-workshop.latex.tools": [
+    "latex-workshop.latex.tools": [
         {
             "name": "latexmk",
             "command": "latexmk",
@@ -18,11 +18,11 @@
                 "-interaction=nonstopmode",
                 "-file-line-error",
                 "-pdf",
-                "-outdir=%OUTDIR%",
-                "%DOCFILE%"
-            ]
+                "-outdir=build/%DOCFILE%",
+                "%DOC%"
+            ],
         },
-    ], 
+    ],
     "latex-workshop.latex.clean.fileTypes": [
         // "*.aux",
         "*.bbl",
@@ -43,12 +43,10 @@
         "*.fls",
         "*.log",
         "*.fdb_latexmk",
-        "*.synctex.gz", 
+        "*.synctex.gz",
         "*.bbl",
         "*.spl",
-
     ],
-
     "latex-workshop.latex.recipes": [
         {
             "name": "LaTeXmk",

@@ -44,22 +44,3 @@
 
 \newcommand{\editorName}{EDITOR NAME} % For cover-letter.tex and response.tex
 
-%----------------------------------------------------------------------------------------
-%	HIGHLIGHTS AND CONTRIBUTIONS
-%----------------------------------------------------------------------------------------
-
-% Research Highlights
-\newcommand{\checkItem}[1]{%
-    \ifstrempty{\trim#1}{%
-        \relax
-    }{%
-        \item #1% 正常内容
-    }%
-}
-\def\highlight{%
-    \begin{highlights}%
-        \item a%
-        \item b%
-        \item c%
-    \end{highlights}%
-}

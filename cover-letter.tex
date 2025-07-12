@@ -1,7 +1,6 @@
 \documentclass{article}
 
-\input{../common-info.tex}
-\usepackage{charter} % Use the Charter font
+\input{preamble/config.tex}
 \usepackage{hyperref}
 
 \usepackage[
@@ -15,7 +14,7 @@
 
 \setlength{\parindent}{0pt} % Paragraph indentation
 \setlength{\parskip}{1em} % Vertical space between paragraphs
-
+\usepackage{mathptmx}  
 \usepackage{graphicx} % Required for including images
 
 \usepackage{fancyhdr} % Required for customizing headers and footers
@@ -36,64 +35,31 @@
 \pagestyle{subsequentpages} % Use the subsequent pages headers/footers style on subsequent pages
 
 
-% Optional: Addressee Information (uncomment and fill if needed)
-% \newcommand{\editorname}{[Editor Name]}
-% \newcommand{\editortitle}{[Editor Title]}
-% \newcommand{\editorjournal}{[Journal Name]}
-
-% Optional: Preprint Information (uncomment and fill if available)
-% \newcommand{\preprinturl}{[https://arxiv.org/abs/your-preprint-id]}
-
-% Logo (uncomment if you have an institutional logo)
-\newcommand{\logofile}{logo.jpg}
+\newcommand{\logofile}{figures/logo.jpg}
 \newcommand{\logowidth}{0.35\textwidth}
 
 %----------------------------------------------------------------------------------------
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	FIRST PAGE HEADER
-%----------------------------------------------------------------------------------------
-
-% Uncomment the following lines if you have a logo
 \includegraphics[width=\logowidth]{\logofile}
 \vspace{-1em}
-
-% If no logo, you can use institution name instead:
-% {\Large\textbf{[Your Institution Name]}}
 
 \rule{\linewidth}{1pt} % Horizontal rule
 
 \bigskip\bigskip % Vertical whitespace
 
-%----------------------------------------------------------------------------------------
-%	YOUR NAME AND CONTACT INFORMATION
-%----------------------------------------------------------------------------------------
-
 \hfill
 \begin{tabular}{l}
-	\hfill \today \bigskip                    \\ % Date
-	\hfill \correspondingAuthorName                        \\
-	\hfill Email: \contactEmail                \\
-	\hfill \addressLine                  \\
+	\hfill \today \bigskip          \\
+	\hfill \correspondingAuthorName \\
+	\hfill Email: \contactEmail     \\
+	\hfill \addressLine             \\
 	\hfill \cinstitutionCity,\cinstitutionState,\cinstitutionPostcode,\cinstitutionCountry
 \end{tabular}
 
 \bigskip % Vertical whitespace
 
-%----------------------------------------------------------------------------------------
-%	ADDRESSEE AND GREETING (Optional)
-%----------------------------------------------------------------------------------------
-
-% Uncomment and customize if you want to address a specific editor
-% \begin{tabular}{l}
-% 	\editorname \\
-% 	\editortitle \\
-% 	\textit{\editorjournal}
-% \end{tabular}
-% 
-% \bigskip % Vertical whitespace
 
 Dear Editor,
 
@@ -114,15 +80,15 @@ This study addresses [research problem] by [your approach/methodology]. Our work
 
 \textbf{The main contributions of our study are as follows:}
 \begin{itemize}
-    \item \textbf{[Contribution 1]:} [Description of first major contribution]
-    
-    \item \textbf{[Contribution 2]:} [Description of second major contribution]
-    
-    \item \textbf{[Contribution 3]:} [Description of third major contribution]
-    
-    \item \textbf{[Contribution 4]:} [Description of fourth major contribution]
-    
-    % Add more items as needed
+	\item \textbf{[Contribution 1]:} [Description of first major contribution]
+
+	\item \textbf{[Contribution 2]:} [Description of second major contribution]
+
+	\item \textbf{[Contribution 3]:} [Description of third major contribution]
+
+	\item \textbf{[Contribution 4]:} [Description of fourth major contribution]
+
+	      % Add more items as needed
 \end{itemize}
 
 \bigskip

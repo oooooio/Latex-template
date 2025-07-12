@@ -48,3 +48,4 @@
 # .vscode/
 .idea/
 *.bak
+build/
