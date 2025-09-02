@@ -27,21 +27,24 @@
   \title{\myTitle} %% Article title
 
 
-  \author[1]{\myName} %% Author name
-  \author[]{\correspondingAuthorName \corref{cor1}}
+  \author[1]{MY NAME} %% Author name
+  \author[]{CORRESPONDING AUTHOR NAME \corref{cor1}}
   \cortext[cor1]{Corresponding author}
 
   %% Author affiliation
   \affiliation[1]{
-    organization={\institutionOrg},
-    addressline={\institutionAddress},
-    city={\institutionCity},
-    postcode={\institutionPostcode},
-    state={\institutionState},
-    country={\institutionCountry}
+    organization={ORGANIZATION},
+    addressline={ADDRESS},
+    city={CITY},
+    postcode={POSTCODE},
+    state={STATE},
+    country={COUNTRY}
   }
-
-  \input{sections/abstract.tex} %% Abstract
+  %% Abstract
+  \begin{abstract}
+    %% Text of abstract
+    Abstract text.
+  \end{abstract}
 
   %%Graphical abstract
   \begin{graphicalabstract}
@@ -78,7 +81,11 @@
 
 \input{sections/conclusion.tex}
 
-\input{sections/appendix.tex}
+\appendix
+\section{Example Appendix Section}
+\label{app1}
+
+Appendix text.
 
 \bibliographystyle{elsarticle-harv}
 \bibliography{ref.bib}
